@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Date de contact NetExpert și formular pentru solicitări de asistență tehnică.">
+    <title>NetExpert - Contact</title>
+    <link rel="icon" type="image/svg+xml" href="../imagini/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="../imagini/logo.svg" alt="Logo NetExpert" width="64" height="64">
+        <h1>Contactează NetExpert</h1>
+        <p>Date de contact și informații despre asistența tehnică.</p>
+    </header>
+    <nav>
+        <a href="../index.html">Acasă</a>
+        <a href="servicii.html">Servicii</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Date de contact</h2>
+            <p><strong>Adresă:</strong> mun. Chișinău, Republica Moldova</p>
+            <p><strong>Telefon:</strong> +373 60 000 000</p>
+            <p><strong>E-mail:</strong> contact@netexpert.md</p>
+        </section>
+
+        <section>
+            <h2>Program de lucru</h2>
+            <p>Luni - Vineri: 09:00 - 17:00</p>
+            <p>Sâmbătă - Duminică: închis</p>
+        </section>
+
+        <section>
+            <h2>Solicitare de asistență</h2>
+            <p>Pentru asistență tehnică, clientul poate contacta firma folosind numărul de telefon sau adresa de e-mail indicate.</p>
+            <p>În solicitare este recomandat să fie descrisă problema și să fie menționate echipamentele sau conexiunile afectate.</p>
+        </section>
+
+        <section>
+            <h2>Formular de contact</h2>
+            <form id="formular-contact" novalidate>
+                <div class="camp">
+                    <label for="nume">Nume și prenume</label>
+                    <input type="text" id="nume" name="nume" autocomplete="name" required>
+                    <span class="eroare" id="eroare-nume"></span>
+                </div>
+
+                <div class="camp">
+                    <label for="email">Adresă de e-mail</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                    <span class="eroare" id="eroare-email"></span>
+                </div>
+
+                <div class="camp">
+                    <label for="telefon">Telefon (opțional)</label>
+                    <input type="tel" id="telefon" name="telefon" autocomplete="tel">
+                    <span class="eroare" id="eroare-telefon"></span>
+                </div>
+
+                <div class="camp">
+                    <label for="mesaj">Descrierea problemei</label>
+                    <textarea id="mesaj" name="mesaj" required></textarea>
+                    <span class="eroare" id="eroare-mesaj"></span>
+                </div>
+
+                <button type="submit">Trimite solicitarea</button>
+                <p class="mesaj-formular" id="mesaj-formular" role="status" aria-live="polite" hidden></p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Informații suplimentare</h2>
+            <p>Solicitările sunt analizate în timpul programului de lucru.</p>
+            <p>Scopul asistenței este identificarea problemei și oferirea unei soluții potrivite.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>NetExpert - 2026</p>
+        <p>Vă mulțumim pentru interes!</p>
+    </footer>
+
+    <script src="../js/contact.js"></script>
+</body>
+</html>
